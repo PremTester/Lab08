@@ -22,6 +22,12 @@ class Freehand_window(QWidget):
 
     def Clear_Screen(self):
         print('Clear')
+
+    def mousePressEvent(self, event):
+        print('Press')
+
+    def mouseReleaseEvent(self, event):
+        print('Release')
       
 
 if __name__ == '__main__':
