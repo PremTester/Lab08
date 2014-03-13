@@ -5,7 +5,7 @@ from PySide.QtGui import *
 class Simple_drawing_window(QWidget):
     def __init__(self):
         QWidget.__init__(self, None)
-        self.setWindowTitle("Simple Drawing")
+        self.setWindowTitle("Simple Drawing 1")
         self.rabbit = QImage("images/rabbit.png")
 
     def paintEvent(self, e):
@@ -34,7 +34,7 @@ class Simple_drawing_window(QWidget):
 class Simple_drawing_window2(Simple_drawing_window):
     def __init__(self):
         Simple_drawing_window.__init__(self)
-        
+        self.setWindowTitle("Simple Drawing 2")
 
     def paintEvent(self, e):
         p = QPainter()
