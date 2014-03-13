@@ -7,9 +7,17 @@ class Freehand_window(QWidget):
         QWidget.__init__(self, None)
         self.setWindowTitle("A simple paint program")
 
+        layout = QVBoxLayout(self)
+
         self.clear_button = QPushButton('Clear')
         self.clear_button.clicked.connect(self.Clear_Screen)
         self.clear_button.show()
+
+        layout.addWidget( self.clear_button )
+
+        self.setLayout( layout )
+
+   
 
     def Clear_Screen(self):
         print('Clear')
