@@ -12,7 +12,8 @@ class Freehand_window(QWidget):
         self.clear_button = QPushButton('Clear')
         self.clear_button.clicked.connect(self.Clear_Screen)
         self.clear_button.show()
-
+        self.Label = QLabel("Drag the mouse to draw")
+        layout.addWidget(self.Label)
         layout.addWidget( self.clear_button )
 
         self.setLayout( layout )
