@@ -42,28 +42,29 @@ class animation_area(QWidget):
 
         self.timer = QTimer(self)
         self.timer.timeout.connect( self.update_value )
-        self.timer.start(30)
+        self.timer.start(10)
 
 
     def paintEvent(self, e):
         p = QPainter()
         p.begin(self)
-        p.setPen( QColor(0,0,0))
+        for i in self.list:
+            p.drawImage( QRect( i.x, i.y, 8, 8), self.image)
         
-        p.drawPoints( self.list )
+   
 
 
         p.end()
 
     def mouseMoveEvent(self, e):
-        self.list.append( e.pos() )
+        self.list.append( Dot( e.pos().x(), e.pos().y() ) )
 
 
     def update_value(self):
     
         self.update()
 
-class dot():
+class Dot():
 
     def __init__(self, x, y):
         self.x = x
