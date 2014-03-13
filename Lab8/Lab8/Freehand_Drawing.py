@@ -5,7 +5,7 @@ from PySide.QtGui import *
 class Freehand_window(QWidget):
     def __init__(self):
         QWidget.__init__(self, None)
-        self.setWindowTitle("Freehand_Drawing")
+        self.setWindowTitle("A simple paint program")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
