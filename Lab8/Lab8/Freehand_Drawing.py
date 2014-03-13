@@ -33,7 +33,7 @@ class Animation_area(QWidget):
         QWidget.__init__(self, None)
         self.list = []
 
-
+        self.image = QImage("images/dot.png")
         self.setMinimumSize(500, 500)
 
         self.arena_w = 500
@@ -56,10 +56,7 @@ class Animation_area(QWidget):
         p.setPen( QColor(0,0,0))
         
         for i in self.list:
-            p.drawPolygon([
-                           QPoint( i.x , i.y ), QPoint( i.x + 5, i.y),
-                           QPoint( i.x, i.y + 5), QPoint( i.x, i.y + 5),
-                            ])
+            p.drawImage(QRect(i.x, i.y, 10, 10), self.image)
 
 
         p.end()
