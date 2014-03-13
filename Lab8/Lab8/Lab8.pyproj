@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f267674f-2ae6-485c-ba54-0494fcbfc8a8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Lab8.py</StartupFile>
+    <StartupFile>Freehand_Drawing.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
