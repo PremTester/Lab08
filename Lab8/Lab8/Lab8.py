@@ -30,19 +30,6 @@ class Simple_drawing_window(QWidget):
         p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
         p.end()
 
-<<<<<<< HEAD
-if __name__ == '__main__':
- 
-    app = QApplication(sys.argv)
-    window = Simple_drawing_window()
-    window.show()
-    app.exec_()
-    sys.exit(0)
-
-
-
-
-=======
 
 class Simple_drawing_window2(QWidget):
     def __init__(self):
@@ -100,4 +87,11 @@ class Simple_drawing_window3(QWidget):
 
         p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
         p.end()
->>>>>>> 3ee62e78ba0aa858cd0d26e5045a19315fda3f99
+
+if __name__ == '__main__':
+ 
+    app = QApplication(sys.argv)
+    window = Simple_drawing_window()
+    window.show()
+    app.exec_()
+    sys.exit(0)
