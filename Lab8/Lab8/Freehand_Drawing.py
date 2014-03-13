@@ -6,12 +6,11 @@ class Freehand_window(QWidget):
     def __init__(self):
         QWidget.__init__(self, None)
 
-
         self.setWindowTitle("A simple paint program")
 
         layout = QVBoxLayout(self)
 
-     
+    
         self.Label = QLabel("Drag the mouse to draw")
         self.clear_button = QPushButton("Clear")
         self.clear_button.clicked.connect( self.clear_image )
