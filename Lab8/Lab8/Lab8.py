@@ -29,3 +29,15 @@ class Simple_drawing_window(QWidget):
 
         p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
         p.end()
+
+if __name__ == '__main__':
+ 
+    app = QApplication(sys.argv)
+    window = Simple_drawing_window()
+    window.show()
+    app.exec_()
+    sys.exit(0)
+
+
+
+
